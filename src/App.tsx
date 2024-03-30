@@ -1,10 +1,20 @@
-import './App.css';
+import styled from 'styled-components';
+import { Card } from './Card';
 
-function App() {
+const AppWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`
+
+export const App = () => {
   return (
-    <div className="App">
-      CARD
-    </div>
+    <AppWrapper>
+      <Card />
+    </AppWrapper>
   );
 }
 
